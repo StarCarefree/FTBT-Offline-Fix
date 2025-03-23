@@ -17,10 +17,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "cn.scarefree.ftbt_offline_fix.fabric.ExampleModFabric"
+      "cn.scarefree.ftbt_offline_fix.fabric.FTBTOfflineFixFabric"
     ],
     "client": [
-      "cn.scarefree.ftbt_offline_fix.fabric.client.ExampleModFabricClient"
+      "cn.scarefree.ftbt_offline_fix.fabric.client.FTBTOfflineFixFabricClient"
     ]
   },
   "mixins": [
