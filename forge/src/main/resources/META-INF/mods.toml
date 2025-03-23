@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[40,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "ftbt_offline_fix"
+version = "${version}"
+displayName = "FTBT Offline Fix"
+authors = "Terry_MC, Star Carefree"
+description = '''
+Fixes FTBT
+'''
+#logoFile = ""
+
+[[dependencies.ftbt_offline_fix]]
+modId = "forge"
+mandatory = true
+versionRange = "[40,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.ftbt_offline_fix]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.ftbt_offline_fix]]
+modId = "architectury"
+mandatory = true
+versionRange = "[4.12.94,)"
+ordering = "AFTER"
+side = "BOTH"
