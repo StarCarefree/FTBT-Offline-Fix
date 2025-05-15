@@ -1,6 +1,6 @@
 {
   "pack": {
-    "description": "FTBT Offline Fix",
+    "description": "A really simple client-side mod that fix the offline bug of FTB Teams.",
     "forge:data_pack_format": 9,
     "pack_format": 8
   }
