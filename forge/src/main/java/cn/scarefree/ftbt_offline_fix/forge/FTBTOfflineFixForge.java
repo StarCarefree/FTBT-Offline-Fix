@@ -8,9 +8,9 @@ import cn.scarefree.ftbt_offline_fix.FTBTOfflineFix;
 
 @Mod(FTBTOfflineFix.MOD_ID)
 public final class FTBTOfflineFixForge {
-    public FTBTOfflineFixForge() {
+    public FTBTOfflineFixForge(FMLJavaModLoadingContext context) {
         // Submit our event bus to let Architectury API register our content on the right time.
-        EventBuses.registerModEventBus(FTBTOfflineFix.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
+        EventBuses.registerModEventBus(FTBTOfflineFix.MOD_ID, context.getModEventBus());
 
         // Run our common setup.
         FTBTOfflineFix.init();

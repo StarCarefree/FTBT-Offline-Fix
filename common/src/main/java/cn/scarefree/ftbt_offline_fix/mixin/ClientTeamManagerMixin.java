@@ -18,13 +18,17 @@ import java.util.UUID;
 
 @Mixin(ClientTeamManagerImpl.class)
 public abstract class ClientTeamManagerMixin {
-    @Shadow(remap = false) public ClientTeam selfTeam;
+    @Shadow(remap = false)
+    private ClientTeam selfTeam;
 
-    @Shadow(remap = false) @Final public Map<UUID, ClientTeam> teamMap;
+    @Shadow(remap = false) @Final
+    private Map<UUID, ClientTeam> teamMap;
 
-    @Shadow(remap = false) public KnownClientPlayer selfKnownPlayer;
+    @Shadow(remap = false)
+    private KnownClientPlayer selfKnownPlayer;
 
-    @Shadow(remap = false) @Final public Map<UUID, KnownClientPlayer> knownPlayers;
+    @Shadow(remap = false) @Final
+    private Map<UUID, KnownClientPlayer> knownPlayers;
 
     @Inject(method = "initSelfDetails", at = @At("HEAD"), cancellable = true, remap = false)
     public void initSelfDetails(UUID selfTeamID, CallbackInfo ci) {
