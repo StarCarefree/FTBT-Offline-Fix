@@ -5,7 +5,7 @@ license = "MIT"
 
 [[mods]]
 modId = "ftbt_offline_fix"
-version = "${version}"
+version = "1.0.0"
 displayName = "FTBT Offline Fix"
 authors = "Terry_MC, Star Carefree"
 description = '''
