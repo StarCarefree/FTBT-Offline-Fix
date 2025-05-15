@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[40,)"
+loaderVersion = "[2,)"
 #issueTrackerURL = ""
 license = "MIT"
 
@@ -9,34 +9,37 @@ version = "${version}"
 displayName = "FTBT Offline Fix"
 authors = "Terry_MC, Star Carefree"
 description = '''
-FTB Team Offline Fix
+A really simple client-side mod that fix the offline bug of FTB Teams.
 '''
 logoFile = "icon.png"
 
 [[dependencies.ftbt_offline_fix]]
-modId = "forge"
-mandatory = true
-versionRange = "[40,)"
+modId = "neoforge"
+type = "required"
+versionRange = "[20.4,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.ftbt_offline_fix]]
 modId = "minecraft"
-mandatory = true
-versionRange = "[1.20.1,)"
+type = "required"
+versionRange = "[1.20.4,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.ftbt_offline_fix]]
 modId = "architectury"
-mandatory = true
+type = "required"
 versionRange = "[4.12.94,)"
 ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies.ftbt_offline_fix]]
 modId = "ftbteams"
-mandatory = true
+type = "required"
 versionRange = "[0,)"
 ordering = "AFTER"
 side = "BOTH"
+
+[[mixins]]
+config = "ftbt_offline_fix.mixins.json"

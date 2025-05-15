@@ -35,6 +35,7 @@ subprojects {
                 includeGroup "dev.ftb.mods"
             }
         }
+        maven { url "https://maven.neoforged.net/releases/" }
     }
 
     loom {
