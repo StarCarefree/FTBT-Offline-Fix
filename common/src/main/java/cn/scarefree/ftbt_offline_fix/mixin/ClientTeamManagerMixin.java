@@ -1,9 +1,9 @@
 package cn.scarefree.ftbt_offline_fix.mixin;
 
 import dev.ftb.mods.ftbteams.FTBTeams;
+import dev.ftb.mods.ftbteams.api.client.KnownClientPlayer;
 import dev.ftb.mods.ftbteams.data.ClientTeam;
-import dev.ftb.mods.ftbteams.data.ClientTeamManager;
-import dev.ftb.mods.ftbteams.data.KnownClientPlayer;
+import dev.ftb.mods.ftbteams.data.ClientTeamManagerImpl;
 import net.minecraft.client.Minecraft;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -16,7 +16,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Map;
 import java.util.UUID;
 
-@Mixin(ClientTeamManager.class)
+@Mixin(ClientTeamManagerImpl.class)
 public abstract class ClientTeamManagerMixin {
     @Shadow(remap = false) public ClientTeam selfTeam;
 
