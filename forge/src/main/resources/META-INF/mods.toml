@@ -9,9 +9,9 @@ version = "${version}"
 displayName = "FTBT Offline Fix"
 authors = "Terry_MC, Star Carefree"
 description = '''
-FTB Team Offline Fix
+A really simple client-side mod that fix the offline bug of FTB Teams.
 '''
-#logoFile = ""
+logoFile = "icon.png"
 
 [[dependencies.ftbt_offline_fix]]
 modId = "forge"
